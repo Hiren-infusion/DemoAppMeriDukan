@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A95175026C6534700D9E155 /* Welcome_Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A95174F26C6534700D9E155 /* Welcome_Screen.swift */; };
+		6A95175326C67BCD00D9E155 /* Login_Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A95175226C67BCD00D9E155 /* Login_Screen.swift */; };
+		6A95175626C67E8B00D9E155 /* SignUp_Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A95175526C67E8B00D9E155 /* SignUp_Screen.swift */; };
 		ACDAFFF526C649F30029C26B /* DemoAppMeriDukanApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDAFFF426C649F30029C26B /* DemoAppMeriDukanApp.swift */; };
 		ACDAFFF726C649F30029C26B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDAFFF626C649F30029C26B /* ContentView.swift */; };
 		ACDAFFF926C649F80029C26B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACDAFFF826C649F80029C26B /* Assets.xcassets */; };
@@ -14,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6A95174F26C6534700D9E155 /* Welcome_Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Welcome_Screen.swift; sourceTree = "<group>"; };
+		6A95175226C67BCD00D9E155 /* Login_Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login_Screen.swift; sourceTree = "<group>"; };
+		6A95175526C67E8B00D9E155 /* SignUp_Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp_Screen.swift; sourceTree = "<group>"; };
 		ACDAFFF126C649F30029C26B /* DemoAppMeriDukan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoAppMeriDukan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACDAFFF426C649F30029C26B /* DemoAppMeriDukanApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoAppMeriDukanApp.swift; sourceTree = "<group>"; };
 		ACDAFFF626C649F30029C26B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -54,6 +60,9 @@
 			children = (
 				ACDAFFF426C649F30029C26B /* DemoAppMeriDukanApp.swift */,
 				ACDAFFF626C649F30029C26B /* ContentView.swift */,
+				6A95174F26C6534700D9E155 /* Welcome_Screen.swift */,
+				6A95175226C67BCD00D9E155 /* Login_Screen.swift */,
+				6A95175526C67E8B00D9E155 /* SignUp_Screen.swift */,
 				ACDAFFF826C649F80029C26B /* Assets.xcassets */,
 				ACDAFFFD26C649F80029C26B /* Info.plist */,
 				ACDAFFFA26C649F80029C26B /* Preview Content */,
@@ -139,7 +148,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACDAFFF726C649F30029C26B /* ContentView.swift in Sources */,
+				6A95175326C67BCD00D9E155 /* Login_Screen.swift in Sources */,
+				6A95175626C67E8B00D9E155 /* SignUp_Screen.swift in Sources */,
 				ACDAFFF526C649F30029C26B /* DemoAppMeriDukanApp.swift in Sources */,
+				6A95175026C6534700D9E155 /* Welcome_Screen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
