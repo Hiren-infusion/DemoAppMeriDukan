@@ -11,7 +11,7 @@ import SwiftUI
 struct DemoAppMeriDukanApp: App {
     var body: some Scene {
         WindowGroup {
-            Login_Screen()
+            Welcome_Screen()
         }
     }
 }
