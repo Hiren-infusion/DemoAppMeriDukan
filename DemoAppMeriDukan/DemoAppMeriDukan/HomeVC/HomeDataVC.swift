@@ -14,9 +14,9 @@ struct HomeDataVC: View {
     @State var searchText = ""
     
     var body: some View {
+       
         NavigationView {
-            VStack(alignment: .leading) {
-                
+            VStack {
                 ZStack {
                     RoundedRectangle(cornerRadius: 10.0)
                         .foregroundColor(Color.white)
@@ -99,40 +99,40 @@ struct HomeDataVC: View {
                         .frame(height: 240)
                         
                     }
-                   // .navigationBarTitle(Text("Home"))
-                    .navigationBarItems(leading:
-                                            Button(action: {
-                                                print("Menu")
-                                            }, label: {
-                                                Image(systemName: "text.alignleft").imageScale(.large)
-                                                    .foregroundColor(.black)
-                                            }),
-                                        trailing:
-                                            
-                                            HStack {
-                                                Button(action: {
-                                                    print("Notification")
-                                                }, label: {
-                                                    Image(systemName: "bell").imageScale(.large)
-                                                        .foregroundColor(.black)
-                                                })
-                                                
-                                                Button(action: {
-                                                    print("Filter")
-                                                }, label: {
-                                                    Image(systemName: "person.crop.circle").imageScale(.large)
-                                                        .foregroundColor(.black)
-                                                })
-                                            }
-                    )
+                    .toolbar {
+                        ToolbarItemGroup(placement: .navigationBarLeading) {
+                            Button(action: {
+                                print("Menu")
+                            }, label: {
+                                Image(systemName: "text.alignleft").imageScale(.large)
+                                   
+                            })
+                        }
+                        ToolbarItemGroup (placement: .navigationBarTrailing) {
+                            
+                            Button(action: {
+                                print("Notification")
+                            }, label: {
+                                Image(systemName: "bell").imageScale(.large)
+                                    
+                            })
+                            
+                            Button(action: {
+                                print("Filter")
+                            }, label: {
+                                Image(systemName: "filter").imageScale(.large)
+                                    .frame(width: 25, height: 25)
+                                    .foregroundColor(.black)
+                                    .background(Color.blue)
+                            })
+                        }
+                    }
                 }
-                Spacer()
             }
-            
-            
         }
-        
+        .accentColor(.black)
     }
+    
 }
 struct CategoriesView: View {
     var cate : Categories
@@ -146,7 +146,7 @@ struct CategoriesView: View {
             Spacer()
             Divider()
             
-        }.frame(width: 150, height: 70)
+        }.frame(width: 120, height: 70)
     }
 }
 
