@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC4F0CDA26CA7F2100FA1357 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4F0CD926CA7F2100FA1357 /* Model.swift */; };
+		ACDA000F26C6826C0029C26B /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDA000E26C6826C0029C26B /* SearchVC.swift */; };
+		ACDA001226C683660029C26B /* HomeDataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDA001126C683660029C26B /* HomeDataVC.swift */; };
 		ACDAFFF526C649F30029C26B /* DemoAppMeriDukanApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDAFFF426C649F30029C26B /* DemoAppMeriDukanApp.swift */; };
 		ACDAFFF726C649F30029C26B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDAFFF626C649F30029C26B /* ContentView.swift */; };
 		ACDAFFF926C649F80029C26B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACDAFFF826C649F80029C26B /* Assets.xcassets */; };
@@ -14,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AC4F0CD926CA7F2100FA1357 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		ACDA000E26C6826C0029C26B /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
+		ACDA001126C683660029C26B /* HomeDataVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDataVC.swift; sourceTree = "<group>"; };
 		ACDAFFF126C649F30029C26B /* DemoAppMeriDukan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoAppMeriDukan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACDAFFF426C649F30029C26B /* DemoAppMeriDukanApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoAppMeriDukanApp.swift; sourceTree = "<group>"; };
 		ACDAFFF626C649F30029C26B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -33,6 +39,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ACDA000D26C682510029C26B /* HomeVC */ = {
+			isa = PBXGroup;
+			children = (
+				ACDA000E26C6826C0029C26B /* SearchVC.swift */,
+				ACDA001126C683660029C26B /* HomeDataVC.swift */,
+				AC4F0CD926CA7F2100FA1357 /* Model.swift */,
+			);
+			path = HomeVC;
+			sourceTree = "<group>";
+		};
 		ACDAFFE826C649F30029C26B = {
 			isa = PBXGroup;
 			children = (
@@ -52,6 +68,7 @@
 		ACDAFFF326C649F30029C26B /* DemoAppMeriDukan */ = {
 			isa = PBXGroup;
 			children = (
+				ACDA000D26C682510029C26B /* HomeVC */,
 				ACDAFFF426C649F30029C26B /* DemoAppMeriDukanApp.swift */,
 				ACDAFFF626C649F30029C26B /* ContentView.swift */,
 				ACDAFFF826C649F80029C26B /* Assets.xcassets */,
@@ -138,6 +155,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC4F0CDA26CA7F2100FA1357 /* Model.swift in Sources */,
+				ACDA000F26C6826C0029C26B /* SearchVC.swift in Sources */,
+				ACDA001226C683660029C26B /* HomeDataVC.swift in Sources */,
 				ACDAFFF726C649F30029C26B /* ContentView.swift in Sources */,
 				ACDAFFF526C649F30029C26B /* DemoAppMeriDukanApp.swift in Sources */,
 			);
