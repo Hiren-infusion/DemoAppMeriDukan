@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A4E8FA926CBE7D5005DA340 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4E8FA826CBE7D4005DA340 /* Login.swift */; };
 		6A95175026C6534700D9E155 /* Welcome_Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A95174F26C6534700D9E155 /* Welcome_Screen.swift */; };
 		6A95175326C67BCD00D9E155 /* Login_Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A95175226C67BCD00D9E155 /* Login_Screen.swift */; };
 		6A95175626C67E8B00D9E155 /* SignUp_Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A95175526C67E8B00D9E155 /* SignUp_Screen.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6A4E8FA826CBE7D4005DA340 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		6A95174F26C6534700D9E155 /* Welcome_Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Welcome_Screen.swift; sourceTree = "<group>"; };
 		6A95175226C67BCD00D9E155 /* Login_Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login_Screen.swift; sourceTree = "<group>"; };
 		6A95175526C67E8B00D9E155 /* SignUp_Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp_Screen.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				ACDAFFF826C649F80029C26B /* Assets.xcassets */,
 				ACDAFFFD26C649F80029C26B /* Info.plist */,
 				ACDAFFFA26C649F80029C26B /* Preview Content */,
+				6A4E8FA826CBE7D4005DA340 /* Login.swift */,
 			);
 			path = DemoAppMeriDukan;
 			sourceTree = "<group>";
@@ -150,6 +153,7 @@
 				ACDAFFF726C649F30029C26B /* ContentView.swift in Sources */,
 				6A95175326C67BCD00D9E155 /* Login_Screen.swift in Sources */,
 				6A95175626C67E8B00D9E155 /* SignUp_Screen.swift in Sources */,
+				6A4E8FA926CBE7D5005DA340 /* Login.swift in Sources */,
 				ACDAFFF526C649F30029C26B /* DemoAppMeriDukanApp.swift in Sources */,
 				6A95175026C6534700D9E155 /* Welcome_Screen.swift in Sources */,
 			);

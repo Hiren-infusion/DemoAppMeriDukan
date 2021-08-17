@@ -12,10 +12,12 @@ struct Welcome_Screen: View {
         
         NavigationView {
             
+            ScrollView(.vertical, showsIndicators: false) {
+            
             VStack {
                 Text("Welcome to App")
                     .font(.system(size: 30, weight: Font.Weight.medium, design: .default))
-                    .padding()
+                    .padding(.top, 30)
                 
                 Text("Explore Us")
                     .font(.system(size: 25, weight: Font.Weight.light, design: .default))
@@ -48,11 +50,12 @@ struct Welcome_Screen: View {
                         .background(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                         .cornerRadius(10)
                         .padding(.top, 20)
-                        .padding(.bottom, 50)
+                        
                 }
             }
-        }
+        }.navigationBarHidden(true)
     }
+}
     
     struct Welcome_Screen_Previews: PreviewProvider {
         static var previews: some View {
