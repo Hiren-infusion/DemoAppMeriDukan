@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A4E8FB126CBF9F6005DA340 /* Welcome_Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4E8FB026CBF9F6005DA340 /* Welcome_Screen.swift */; };
+		6A4E8FB526CBFA26005DA340 /* Login_Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4E8FB426CBFA26005DA340 /* Login_Screen.swift */; };
+		6A4E8FB926CBFA49005DA340 /* SignUp_Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4E8FB826CBFA49005DA340 /* SignUp_Screen.swift */; };
+		6A4E8FBD26CBFC6F005DA340 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4E8FBC26CBFC6F005DA340 /* Login.swift */; };
 		AC4F0CDA26CA7F2100FA1357 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4F0CD926CA7F2100FA1357 /* Model.swift */; };
 		ACDA000F26C6826C0029C26B /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDA000E26C6826C0029C26B /* SearchVC.swift */; };
 		ACDA001226C683660029C26B /* HomeDataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDA001126C683660029C26B /* HomeDataVC.swift */; };
@@ -17,6 +21,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6A4E8FB026CBF9F6005DA340 /* Welcome_Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Welcome_Screen.swift; sourceTree = "<group>"; };
+		6A4E8FB426CBFA26005DA340 /* Login_Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login_Screen.swift; sourceTree = "<group>"; };
+		6A4E8FB826CBFA49005DA340 /* SignUp_Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp_Screen.swift; sourceTree = "<group>"; };
+		6A4E8FBC26CBFC6F005DA340 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		AC4F0CD926CA7F2100FA1357 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		ACDA000E26C6826C0029C26B /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
 		ACDA001126C683660029C26B /* HomeDataVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDataVC.swift; sourceTree = "<group>"; };
@@ -39,6 +47,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6A4E8FAF26CBF9D1005DA340 /* Welcome UI */ = {
+			isa = PBXGroup;
+			children = (
+				6A4E8FB026CBF9F6005DA340 /* Welcome_Screen.swift */,
+			);
+			path = "Welcome UI";
+			sourceTree = "<group>";
+		};
+		6A4E8FB326CBFA15005DA340 /* Login UI */ = {
+			isa = PBXGroup;
+			children = (
+				6A4E8FB426CBFA26005DA340 /* Login_Screen.swift */,
+				6A4E8FBC26CBFC6F005DA340 /* Login.swift */,
+			);
+			path = "Login UI";
+			sourceTree = "<group>";
+		};
+		6A4E8FB726CBFA3A005DA340 /* SignUp UI */ = {
+			isa = PBXGroup;
+			children = (
+				6A4E8FB826CBFA49005DA340 /* SignUp_Screen.swift */,
+			);
+			path = "SignUp UI";
+			sourceTree = "<group>";
+		};
 		ACDA000D26C682510029C26B /* HomeVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -68,6 +101,9 @@
 		ACDAFFF326C649F30029C26B /* DemoAppMeriDukan */ = {
 			isa = PBXGroup;
 			children = (
+				6A4E8FB726CBFA3A005DA340 /* SignUp UI */,
+				6A4E8FB326CBFA15005DA340 /* Login UI */,
+				6A4E8FAF26CBF9D1005DA340 /* Welcome UI */,
 				ACDA000D26C682510029C26B /* HomeVC */,
 				ACDAFFF426C649F30029C26B /* DemoAppMeriDukanApp.swift */,
 				ACDAFFF626C649F30029C26B /* ContentView.swift */,
@@ -155,9 +191,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A4E8FB526CBFA26005DA340 /* Login_Screen.swift in Sources */,
 				AC4F0CDA26CA7F2100FA1357 /* Model.swift in Sources */,
 				ACDA000F26C6826C0029C26B /* SearchVC.swift in Sources */,
+				6A4E8FB926CBFA49005DA340 /* SignUp_Screen.swift in Sources */,
+				6A4E8FB126CBF9F6005DA340 /* Welcome_Screen.swift in Sources */,
 				ACDA001226C683660029C26B /* HomeDataVC.swift in Sources */,
+				6A4E8FBD26CBFC6F005DA340 /* Login.swift in Sources */,
 				ACDAFFF726C649F30029C26B /* ContentView.swift in Sources */,
 				ACDAFFF526C649F30029C26B /* DemoAppMeriDukanApp.swift in Sources */,
 			);
