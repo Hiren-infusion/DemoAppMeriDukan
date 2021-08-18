@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC42C2A826CD19EA0042095E /* FeaturedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC42C2A726CD19EA0042095E /* FeaturedVC.swift */; };
 		AC4F0CDA26CA7F2100FA1357 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4F0CD926CA7F2100FA1357 /* Model.swift */; };
 		ACDA000F26C6826C0029C26B /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDA000E26C6826C0029C26B /* SearchVC.swift */; };
 		ACDA001226C683660029C26B /* HomeDataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDA001126C683660029C26B /* HomeDataVC.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AC42C2A726CD19EA0042095E /* FeaturedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedVC.swift; sourceTree = "<group>"; };
 		AC4F0CD926CA7F2100FA1357 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		ACDA000E26C6826C0029C26B /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
 		ACDA001126C683660029C26B /* HomeDataVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDataVC.swift; sourceTree = "<group>"; };
@@ -39,6 +41,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC42C2A526CD19CB0042095E /* FeaturedVC */ = {
+			isa = PBXGroup;
+			children = (
+				AC42C2A726CD19EA0042095E /* FeaturedVC.swift */,
+			);
+			path = FeaturedVC;
+			sourceTree = "<group>";
+		};
 		ACDA000D26C682510029C26B /* HomeVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -68,6 +78,7 @@
 		ACDAFFF326C649F30029C26B /* DemoAppMeriDukan */ = {
 			isa = PBXGroup;
 			children = (
+				AC42C2A526CD19CB0042095E /* FeaturedVC */,
 				ACDA000D26C682510029C26B /* HomeVC */,
 				ACDAFFF426C649F30029C26B /* DemoAppMeriDukanApp.swift */,
 				ACDAFFF626C649F30029C26B /* ContentView.swift */,
@@ -155,6 +166,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC42C2A826CD19EA0042095E /* FeaturedVC.swift in Sources */,
 				AC4F0CDA26CA7F2100FA1357 /* Model.swift in Sources */,
 				ACDA000F26C6826C0029C26B /* SearchVC.swift in Sources */,
 				ACDA001226C683660029C26B /* HomeDataVC.swift in Sources */,

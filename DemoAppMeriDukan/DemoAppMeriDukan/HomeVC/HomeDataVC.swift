@@ -12,7 +12,7 @@ struct HomeDataVC: View {
     var categ: [Categories] = CategoriesList.topTen
     var featureData: [Featured] = FeaturedList.topTen
     @State var searchText = ""
-    
+    @State var selection: Int? = nil
     var body: some View {
        
         NavigationView {
@@ -33,7 +33,6 @@ struct HomeDataVC: View {
                 .cornerRadius(20)
                 .padding()
                 
-                ZStack {
                     List  {
                         HStack {
                             Text("Categories")
@@ -60,9 +59,20 @@ struct HomeDataVC: View {
                             Text("Featured")
                                 .font(.title)
                             Spacer()
-                            Button("See all") {
-                                print("all")
-                            }.foregroundColor(.gray)
+                            NavigationLink(destination: FeaturedVC(feature: "Featured"), tag: 1, selection: $selection) {
+                                Button(action: {
+                                    self.selection = 1
+                                }) {
+                                    HStack {
+                                        Spacer()
+                                        Text("See all").foregroundColor(Color.gray)
+                                    }
+                                }
+                                .buttonStyle(PlainButtonStyle())
+                            }
+//                            Button("See all") {
+//                                print("all")
+//                            }.foregroundColor(.gray)
                         }.frame(height: 10)
                         
                         ScrollView(.horizontal, showsIndicators: false, content: {
@@ -100,7 +110,7 @@ struct HomeDataVC: View {
                         
                     }
                     .listStyle(PlainListStyle())
-                    
+            
                     .toolbar {
                         ToolbarItemGroup(placement: .navigationBarLeading) {
                             Button(action: {
@@ -129,7 +139,6 @@ struct HomeDataVC: View {
                             })
                         }
                     }
-                }
             }
         }
         .accentColor(.black)
