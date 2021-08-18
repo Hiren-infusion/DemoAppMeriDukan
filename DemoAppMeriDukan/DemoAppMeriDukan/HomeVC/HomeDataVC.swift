@@ -99,6 +99,8 @@ struct HomeDataVC: View {
                         .frame(height: 240)
                         
                     }
+                    .listStyle(PlainListStyle())
+                    
                     .toolbar {
                         ToolbarItemGroup(placement: .navigationBarLeading) {
                             Button(action: {
@@ -137,32 +139,18 @@ struct HomeDataVC: View {
 struct CategoriesView: View {
     var cate : Categories
     var body: some View {
-        
-        VStack {
+        ZStack {
             Image(cate.image)
                 .resizable()
                 .cornerRadius(10)
-                .overlay(labelOverlay(cate: cate), alignment: .center)
-            Spacer()
-            Divider()
-            
-        }.frame(width: 120, height: 70)
-    }
-}
-
-
-struct labelOverlay: View {
-    var cate : Categories
-    var body: some View {
-        ZStack{
+            RoundedRectangle(cornerRadius: 10.0)
+                .fill(Color.red)
+                .opacity(0.7)
             Text(cate.title)
                 .font(.title3)
                 .fontWeight(.bold)
                 .foregroundColor(.white)
-        }.background(Color.red)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .opacity(0.7)
-        .padding(10)
+        }.frame(width: 120, height: 70)
     }
 }
 
