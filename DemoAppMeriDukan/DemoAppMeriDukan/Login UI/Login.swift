@@ -15,10 +15,14 @@ struct Login: View {
         
         VStack(alignment: .leading) {
             
+            if !name.isEmpty {
+            
             Text("Name")
                 .foregroundColor(.gray)
                 .font(.system(size: 20, weight: Font.Weight.regular))
                 .padding(.bottom, -5)
+            
+            }
             
             TextField("Name", text: $name)
                 .frame(height:40)

@@ -6,11 +6,12 @@
 //
 
 import SwiftUI
+import NavigationStack
 
 struct Welcome_Screen: View {
     var body: some View {
         
-        NavigationView {
+        NavigationStackView(transitionType: .custom(.opacity)) {
             
             ScrollView(.vertical, showsIndicators: false) {
             
@@ -30,8 +31,7 @@ struct Welcome_Screen: View {
                     .frame(height: 350)
                     .cornerRadius(4)
                 
-                NavigationLink(
-                    destination: Login_Screen()) {
+                PushView(destination: Login_Screen()) {
                     Text("Log in")
                         .font(.system(size: 25, weight: Font.Weight.light, design: .default))
                         .foregroundColor(.white)
@@ -41,7 +41,7 @@ struct Welcome_Screen: View {
                         .padding(.top, 30)
                 }
                 
-                NavigationLink(
+                PushView(
                     destination: SignUp_Screen()) {
                     Text("Signup")
                         .font(.system(size: 25, weight: Font.Weight.light, design: .default))
