@@ -8,53 +8,55 @@
 import SwiftUI
 
 struct FeaturedVC: View {
-    var feature = "Hiren"
+    var feature = "Featured"
     var featureData: [Featured] = FeaturedList.topTen
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
     var body: some View {
-        NavigationView{
-            
-            let columns = [
-                GridItem(.flexible(), spacing: 0),
-                GridItem(.flexible(), spacing: 0)
-            ]
-            ScrollView(.vertical) {
-                LazyVGrid(columns: columns) {
-                    ForEach(featureData) { index in
-                        FeaturedView1(feat: index)
+        
+        let columns = [
+            GridItem(.flexible(), spacing: 0),
+            GridItem(.flexible(), spacing: 0)
+        ]
+        NavigationView {
+                ScrollView(.vertical) {
+                    LazyVGrid(columns: columns) {
+                        ForEach(featureData) { index in
+                            FeaturedView1(feat: index)
+                        }
                     }
                 }
-            }
-//            .navigationBarBackButtonHidden(true)
-//            .toolbar {
-//                ToolbarItemGroup(placement: .navigationBarLeading) {
-//                    Button(action: {
-//                        print("Back")
-//                    }, label: {
-//                        Image(systemName: "arrow.backward").imageScale(.large)
-//                        foregroundColor(Color.black)
-//                    })
-//                }
-//                ToolbarItemGroup (placement: .navigationBarTrailing) {
-//                    
-//                    Button(action: {
-//                        print("Search")
-//                    }, label: {
-//                        Image(systemName: "magnifyingglass").imageScale(.large)
-//                        foregroundColor(Color.black)
-//                        
-//                    })
-//                    
-//                    Button(action: {
-//                        print("Notification")
-//                    }, label: {
-//                        Image(systemName: "bell").imageScale(.large)
-//                        foregroundColor(Color.black)
-//                        
-//                    })
-//                }
-//            }
+            .navigationBarTitle(Text(feature))
+               // .navigationBarHidden(true)
+            .navigationBarItems(leading:
+                                    Button(action: {
+                                        self.presentationMode.wrappedValue.dismiss()
+                                    }, label: {
+                                        Image(systemName: "arrow.backward").imageScale(.large)
+                                            .foregroundColor(Color.black)
+                                    })
+                                
+                                , trailing:
+                                    
+                                    HStack {
+                                        Button(action: {
+                                            print("hk")
+                                        }, label: {
+                                            Image(systemName: "magnifyingglass").imageScale(.large)
+                                                .foregroundColor(Color.black)
+                                        })
+                                        Button(action: {
+                                            print("hk")
+                                        }, label: {
+                                            Image(systemName: "bell").imageScale(.large)
+                                                .foregroundColor(Color.black)
+                                        })
+                                    })
         }
+        
+        
+        
+        
     }
 }
 
