@@ -31,7 +31,7 @@ struct Welcome_Screen: View {
                     .frame(height: 350)
                     .cornerRadius(4)
                 
-                PushView(destination: Login_Screen()) {
+                PushView(destination: Cart_Screen()) {
                     Text("Log in")
                         .font(.system(size: 25, weight: Font.Weight.light, design: .default))
                         .foregroundColor(.white)
