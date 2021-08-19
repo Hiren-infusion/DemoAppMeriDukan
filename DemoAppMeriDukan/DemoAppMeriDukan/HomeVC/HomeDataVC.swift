@@ -92,9 +92,20 @@ struct HomeDataVC: View {
                             Text("Best Sell")
                                 .font(.title)
                             Spacer()
-                            Button("See all") {
-                                print("all")
-                            }.foregroundColor(.gray)
+                            NavigationLink(destination: ItemDetailVC(), tag: 2, selection: $selection) {
+                                Button(action: {
+                                    self.selection = 2
+                                }) {
+                                    HStack {
+                                        Spacer()
+                                        Text("See all").foregroundColor(Color.gray)
+                                    }
+                                }
+                                .buttonStyle(PlainButtonStyle())
+                            }
+//                            Button("See all") {
+//                                print("all")
+                        //    }.foregroundColor(.gray)
                         }.frame(height: 10)
                         
                         ScrollView(.horizontal, showsIndicators: false, content: {
