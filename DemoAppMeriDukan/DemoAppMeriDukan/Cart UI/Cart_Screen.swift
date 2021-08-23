@@ -17,13 +17,13 @@ struct Cart_Screen: View {
             Cart_Cell()
                 
             .navigationTitle("Cart")
-//            .navigationBarItems(trailing:
-//                Button(action: {
-//                    print("User icon pressed...")
-//                }) {
-//                    Image(systemName: "bell").imageScale(.large)
-//                        .foregroundColor(.black)
-//                })
+            .navigationBarItems(trailing:
+                Button(action: {
+                    print("User icon pressed...")
+                }) {
+                    Image(systemName: "bell").imageScale(.large)
+                        .foregroundColor(.black)
+                })
         }
         
     }
@@ -70,15 +70,13 @@ struct Cart_Cell: View {
                                     Text("-")
                                         .font(.system(size: 30, weight: Font.Weight.light, design: .default))
                                         .foregroundColor(.black)
-                                }
+                                }.buttonStyle(PlainButtonStyle())
                                 
-                                Button(action: {
-                                    print("Tapped")
-                                }) {
+                                
                                     Text("1")
                                         .font(.system(size: 25, weight: Font.Weight.light, design: .default))
                                         .foregroundColor(.black)
-                                }
+                                
                                 
                                 Button(action: {
                                     print("Tapped")
@@ -86,7 +84,7 @@ struct Cart_Cell: View {
                                     Text("+")
                                         .font(.system(size: 30, weight: Font.Weight.light, design: .default))
                                         .foregroundColor(.black)
-                                }
+                                }.buttonStyle(PlainButtonStyle())
                             }.frame(width: 160, height: 45)
                             .background(Color(#colorLiteral(red: 0.9659907222, green: 0.9661259055, blue: 0.9659481645, alpha: 1)))
                             .cornerRadius(3)
@@ -111,7 +109,7 @@ struct Cart_Cell: View {
             .onAppear {
              UITableView.appearance().separatorStyle = .none
             }
-            }
+            }.listStyle(PlainListStyle())
             .navigationTitle("Cart")
 //        }
     }

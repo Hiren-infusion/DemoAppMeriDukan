@@ -13,15 +13,36 @@ struct Create_Address: View {
         
         NavigationView {
             ScrollView {
-//                ZStack(alignment: .center) {
+                
+                ZStack(alignment: .center) {
                     VStack {
                         Name_Address()
                         City_PostalCode()
                         Phone_Number()
+                        
+                        Button(action: {
+                            
+                        }, label: {
+                            Text("Add Address")
+                                .font(.system(size: 20, weight: Font.Weight.bold, design: .default))
+                                .foregroundColor(.white)
+                        }).frame(width: 360, height: 70)
+                        .background(Color(#colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1)))
+                        .cornerRadius(10)
+                        .padding(.top, 250)
+                        
                     }.padding(.horizontal)
-//                }
-            }
-        }.navigationTitle("Create Address")
+                    .padding(.top)
+                }
+            }.navigationTitle("Create Address")
+            .navigationBarItems(trailing:
+                                    Button(action: {
+                                        print("User icon pressed...")
+                                    }) {
+                                        Image(systemName: "bell").imageScale(.large)
+                                            .foregroundColor(.black)
+                                    })
+        }
     }
 }
 
@@ -35,11 +56,12 @@ struct Name_Address: View {
         VStack(alignment: .leading) {
             
             if !name.isEmpty {
-                 
+                
                 Text("Name")
                     .foregroundColor(.gray)
                     .font(.system(size: 20, weight: Font.Weight.regular))
                     .padding(.bottom, -5)
+                    .padding(.top)
                 
             }
             
@@ -56,6 +78,7 @@ struct Name_Address: View {
                     .foregroundColor(.gray)
                     .font(.system(size: 20, weight: Font.Weight.regular))
                     .padding(.bottom, -5)
+                    .padding(.top)
                 
             }
             
@@ -85,6 +108,7 @@ struct City_PostalCode: View {
                     .foregroundColor(.gray)
                     .font(.system(size: 20, weight: Font.Weight.regular))
                     .padding(.bottom, -5)
+                    .padding(.top)
                 
             }
             
@@ -101,6 +125,7 @@ struct City_PostalCode: View {
                     .foregroundColor(.gray)
                     .font(.system(size: 20, weight: Font.Weight.regular))
                     .padding(.bottom, -5)
+                    .padding(.top)
                 
             }
             
@@ -130,6 +155,7 @@ struct Phone_Number: View {
                     .foregroundColor(.gray)
                     .font(.system(size: 20, weight: Font.Weight.regular))
                     .padding(.bottom, -5)
+                    .padding(.top)
                 
             }
             
