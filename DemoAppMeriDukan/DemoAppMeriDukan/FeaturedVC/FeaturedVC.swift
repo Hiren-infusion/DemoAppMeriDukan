@@ -6,11 +6,11 @@
 //
 
 import SwiftUI
+import NavigationStack
 
 struct FeaturedVC: View {
     var feature = "Featured"
     var featureData: [Featured] = FeaturedList.topTen
-    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
     var body: some View {
         
@@ -29,13 +29,11 @@ struct FeaturedVC: View {
             .navigationBarTitle(Text(feature))
                // .navigationBarHidden(true)
             .navigationBarItems(leading:
-                                    Button(action: {
-                                        self.presentationMode.wrappedValue.dismiss()
-                                    }, label: {
+                                    
+                                    PopView {
                                         Image(systemName: "arrow.backward").imageScale(.large)
                                             .foregroundColor(Color.black)
-                                    })
-                                
+                                    }
                                 , trailing:
                                     
                                     HStack {

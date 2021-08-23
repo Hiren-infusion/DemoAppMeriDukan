@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import NavigationStack
 
 struct HomeDataVC: View {
     
@@ -13,8 +14,11 @@ struct HomeDataVC: View {
     var featureData: [Featured] = FeaturedList.topTen
     @State var searchText = ""
     @State var selection: Int? = nil
+    @State private var isActive = false
+    @State private var isActive1 = false
+    
     var body: some View {
-       
+        NavigationStackView{
         NavigationView {
             VStack {
                 ZStack {
@@ -59,20 +63,16 @@ struct HomeDataVC: View {
                             Text("Featured")
                                 .font(.title)
                             Spacer()
-                            NavigationLink(destination: FeaturedVC(feature: "Featured"), tag: 1, selection: $selection) {
-                                Button(action: {
-                                    self.selection = 1
-                                }) {
-                                    HStack {
-                                        Spacer()
-                                        Text("See all").foregroundColor(Color.gray)
-                                    }
-                                }
-                                .buttonStyle(PlainButtonStyle())
-                            }
-//                            Button("See all") {
-//                                print("all")
-//                            }.foregroundColor(.gray)
+                            
+                            PushView(destination: FeaturedVC(), isActive: $isActive) {
+                                            Text("")
+                                        }
+                            Button(action: {
+                                            self.isActive.toggle()
+                                        }, label: {
+                                            Text("See all")
+                                                .foregroundColor(.gray)
+                                        }).buttonStyle(PlainButtonStyle())
                         }.frame(height: 10)
                         
                         ScrollView(.horizontal, showsIndicators: false, content: {
@@ -92,20 +92,15 @@ struct HomeDataVC: View {
                             Text("Best Sell")
                                 .font(.title)
                             Spacer()
-                            NavigationLink(destination: ItemDetailVC(), tag: 2, selection: $selection) {
-                                Button(action: {
-                                    self.selection = 2
-                                }) {
-                                    HStack {
-                                        Spacer()
-                                        Text("See all").foregroundColor(Color.gray)
-                                    }
-                                }
-                                .buttonStyle(PlainButtonStyle())
-                            }
-//                            Button("See all") {
-//                                print("all")
-                        //    }.foregroundColor(.gray)
+                            PushView(destination: ItemDetailVC(), isActive: $isActive1) {
+                                            Text("")
+                                        }
+                            Button(action: {
+                                            self.isActive1.toggle()
+                                        }, label: {
+                                            Text("See all")
+                                                .foregroundColor(.gray)
+                                        }).buttonStyle(PlainButtonStyle())
                         }.frame(height: 10)
                         
                         ScrollView(.horizontal, showsIndicators: false, content: {
@@ -151,10 +146,17 @@ struct HomeDataVC: View {
                         }
                     }
             }
+        }.accentColor(.black)
         }
-        .accentColor(.black)
     }
     
+}
+struct Root: View {
+    var body: some View {
+        NavigationStackView {
+            HomeDataVC()
+        }
+    }
 }
 struct CategoriesView: View {
     var cate : Categories

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,7 +11,7 @@
 		AC4F0CDA26CA7F2100FA1357 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4F0CD926CA7F2100FA1357 /* Model.swift */; };
 		AC701F9626CE792700D7CF24 /* ItemDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC701F9526CE792700D7CF24 /* ItemDetailVC.swift */; };
 		AC701F9D26CE799F00D7CF24 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC701F9C26CE799F00D7CF24 /* PageViewController.swift */; };
-		AC701FA026CE948D00D7CF24 /* bottomRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC701F9F26CE948D00D7CF24 /* bottomRow.swift */; };
+		AC83BF9226D36D9900513A07 /* NavigationStack in Frameworks */ = {isa = PBXBuildFile; productRef = AC83BF9126D36D9900513A07 /* NavigationStack */; };
 		ACDA000F26C6826C0029C26B /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDA000E26C6826C0029C26B /* SearchVC.swift */; };
 		ACDA001226C683660029C26B /* HomeDataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDA001126C683660029C26B /* HomeDataVC.swift */; };
 		ACDAFFF526C649F30029C26B /* DemoAppMeriDukanApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDAFFF426C649F30029C26B /* DemoAppMeriDukanApp.swift */; };
@@ -25,7 +25,6 @@
 		AC4F0CD926CA7F2100FA1357 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		AC701F9526CE792700D7CF24 /* ItemDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailVC.swift; sourceTree = "<group>"; };
 		AC701F9C26CE799F00D7CF24 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
-		AC701F9F26CE948D00D7CF24 /* bottomRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bottomRow.swift; sourceTree = "<group>"; };
 		ACDA000E26C6826C0029C26B /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
 		ACDA001126C683660029C26B /* HomeDataVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDataVC.swift; sourceTree = "<group>"; };
 		ACDAFFF126C649F30029C26B /* DemoAppMeriDukan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoAppMeriDukan.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC83BF9226D36D9900513A07 /* NavigationStack in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,7 +60,6 @@
 			children = (
 				AC701F9526CE792700D7CF24 /* ItemDetailVC.swift */,
 				AC701F9C26CE799F00D7CF24 /* PageViewController.swift */,
-				AC701F9F26CE948D00D7CF24 /* bottomRow.swift */,
 			);
 			path = ItemDetailVC;
 			sourceTree = "<group>";
@@ -130,6 +129,9 @@
 			dependencies = (
 			);
 			name = DemoAppMeriDukan;
+			packageProductDependencies = (
+				AC83BF9126D36D9900513A07 /* NavigationStack */,
+			);
 			productName = DemoAppMeriDukan;
 			productReference = ACDAFFF126C649F30029C26B /* DemoAppMeriDukan.app */;
 			productType = "com.apple.product-type.application";
@@ -157,6 +159,9 @@
 				Base,
 			);
 			mainGroup = ACDAFFE826C649F30029C26B;
+			packageReferences = (
+				AC83BF9026D36D9900513A07 /* XCRemoteSwiftPackageReference "swiftui-navigation-stack" */,
+			);
 			productRefGroup = ACDAFFF226C649F30029C26B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -187,7 +192,6 @@
 				AC4F0CDA26CA7F2100FA1357 /* Model.swift in Sources */,
 				ACDA000F26C6826C0029C26B /* SearchVC.swift in Sources */,
 				AC701F9626CE792700D7CF24 /* ItemDetailVC.swift in Sources */,
-				AC701FA026CE948D00D7CF24 /* bottomRow.swift in Sources */,
 				ACDA001226C683660029C26B /* HomeDataVC.swift in Sources */,
 				ACDAFFF726C649F30029C26B /* ContentView.swift in Sources */,
 				ACDAFFF526C649F30029C26B /* DemoAppMeriDukanApp.swift in Sources */,
@@ -380,6 +384,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AC83BF9026D36D9900513A07 /* XCRemoteSwiftPackageReference "swiftui-navigation-stack" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/matteopuc/swiftui-navigation-stack.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AC83BF9126D36D9900513A07 /* NavigationStack */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AC83BF9026D36D9900513A07 /* XCRemoteSwiftPackageReference "swiftui-navigation-stack" */;
+			productName = NavigationStack;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = ACDAFFE926C649F30029C26B /* Project object */;
 }
