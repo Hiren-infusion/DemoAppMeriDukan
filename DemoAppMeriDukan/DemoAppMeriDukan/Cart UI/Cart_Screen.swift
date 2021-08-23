@@ -12,15 +12,18 @@ struct Cart_Screen: View {
         
         NavigationView {
             
+            
+            
             Cart_Cell()
-//            .navigationTitle("Cart")
-            .navigationBarItems(trailing:
-                Button(action: {
-                    print("User icon pressed...")
-                }) {
-                    Image(systemName: "bell").imageScale(.large)
-                        .foregroundColor(.black)
-                })
+                
+            .navigationTitle("Cart")
+//            .navigationBarItems(trailing:
+//                Button(action: {
+//                    print("User icon pressed...")
+//                }) {
+//                    Image(systemName: "bell").imageScale(.large)
+//                        .foregroundColor(.black)
+//                })
         }
         
     }
@@ -29,7 +32,7 @@ struct Cart_Screen: View {
 struct Cart_Cell: View {
     var body: some View{
         
-        NavigationView {
+//        NavigationView {
             
             List(0..<15) {_ in
                 
@@ -110,7 +113,7 @@ struct Cart_Cell: View {
             }
             }
             .navigationTitle("Cart")
-        }
+//        }
     }
 }
 
