@@ -10,6 +10,7 @@ import NavigationStack
 
 struct PaymentVC: View {
     var body: some View {
+        NavigationStackView{
         NavigationView {
             ScrollView(.vertical, showsIndicators: false, content: {
                 VStack(alignment: .leading) {
@@ -49,6 +50,7 @@ struct PaymentVC: View {
                                                 .foregroundColor(Color.black)
                                         })
                                     })
+        }
         }
     }
 }
@@ -92,41 +94,19 @@ struct TotalCell: View {
 }
 
 struct buttonCell: View {
+    @State private var isActive = false
     var body: some View {
-//        VStack {
-//
-//            Spacer(minLength: 50)
-//
-//            Button(action: {
-//                print("AddCard")
-//            }, label: {
-//                Text("Add Caed")
-//                    .bold()
-//                    .foregroundColor(.white)
-//                    .background(Color.blue)
-//                    .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, idealHeight: 100, maxHeight: .infinity)
-//            })
-//
-//            Button(action: {
-//                print("Checkout")
-//            }, label: {
-//                Text("Checkout")
-//                    .bold()
-//                    .foregroundColor(.white)
-//                    .background(Color.blue)
-//
-//            }).frame(height: 100, alignment: .center)
-//
-//        }
         Spacer(minLength: 70)
         ZStack {
             RoundedRectangle(cornerRadius: 0)
                         .stroke(style: StrokeStyle(lineWidth: 1, dash: [3]))
                         .foregroundColor(Color(UIColor.blue))
-                .frame(height: 50)
+                .frame(height: 55)
             
             VStack {
-                Button(action: {}, label: {
+                Button(action: {
+                    print("Add Card")
+                }, label: {
                     Text("Add Card")
                         .bold()
                         .font(.title3)
@@ -135,19 +115,26 @@ struct buttonCell: View {
             }
         }
         
-        Spacer(minLength: 40)
+        Spacer(minLength: 30)
         
         VStack {
-            Button(action: {}, label: {
+            PushView(destination: CheckoutVC(), isActive: $isActive) {
+                Text("")
+            }
+            Button(action: {
+                self.isActive.toggle()
+            }, label: {
                 Text("Checkout")
                     .bold()
                     .font(.title3)
                 
             })
+            
         }
-        .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, idealHeight: 50, maxHeight: .infinity)
+        .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, idealHeight: 55, maxHeight: .infinity)
             .foregroundColor(.white)
             .background(Color.blue)
+            .cornerRadius(5.0)
     }
 }
 struct PaymentVC_Previews: PreviewProvider {
