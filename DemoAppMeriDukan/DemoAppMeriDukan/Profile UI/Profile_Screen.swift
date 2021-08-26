@@ -1,48 +1,25 @@
 //
-//  Create_Address.swift
+//  Profile_Screen.swift
 //  DemoAppMeriDukan
 //
-//  Created by iOS Dev2 on 20/08/21.
+//  Created by iOS Dev2 on 26/08/21.
 //
 
 import SwiftUI
 
-struct Create_Address: View {
-    
-    @State private var alertIsPresented = false
-    
-    @State var data = Name_Address.self
-    
+struct Profile_Screen: View {
     var body: some View {
-        
         NavigationView {
-            
             ScrollView {
-                
-                    VStack {
-                        Name_Address()
-                        City_PostalCode()
-                        Phone_Number()
-                        
-                        Button(action: {
-                            
-                        }, label: {
-                            Text("Add Address")
-                                .font(.system(size: 20, weight: Font.Weight.bold, design: .default))
-                                .foregroundColor(.white)
-                        }).frame(width: 360, height: 70)
-                        .background(Color(#colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1)))
-                        .cornerRadius(10)
-                        .padding(.top, 100)
-                        .alert(isPresented: $alertIsPresented, content: {
-                            Alert(title: Text("Done"), message: Text("You are successfully logged in"), dismissButton: .default(Text("Close")))
-                        })
-                        
-                    }.padding(.horizontal)
-                    .padding(.top)
-            }.navigationTitle("Create Address")
+                VStack {
+                    Name_AddressLane()
+                    City_Gender()
+                    Email_Phone()
+                }.padding(.horizontal)
+                .padding(.top)
+            }
+            .navigationTitle("Profile")
             .navigationBarItems(leading:
-                                    
                                     
                                     Image(systemName: "arrow.backward").imageScale(.large)
                                     .foregroundColor(Color.black)
@@ -62,7 +39,7 @@ struct Create_Address: View {
 }
 
 
-struct Name_Address: View {
+struct Name_AddressLane: View {
     
     @State var name: String = ""
     @State var address: String = ""
@@ -84,16 +61,11 @@ struct Name_Address: View {
             
             TextField("Name", text: $name)
                 .frame(height:40)
-             
+            
             Rectangle()
                 .frame(height:1)
                 .foregroundColor(.gray)
-            if name.isEmpty {
-                Text("Please enter name!")
-                    .font(.footnote)
-                    .foregroundColor(.red)
-                    .transition(AnyTransition.opacity.animation(.easeIn))
-            }
+            
             if !address.isEmpty {
                 
                 Text("Address lane")
@@ -116,7 +88,7 @@ struct Name_Address: View {
 }
 
 
-struct City_PostalCode: View {
+struct City_Gender: View {
     
     @State var city: String = ""
     @State var postalCode: String = ""
@@ -163,13 +135,32 @@ struct City_PostalCode: View {
 }
 
 
-struct Phone_Number: View {
+struct Email_Phone: View {
     
+    @State var email: String = ""
     @State var phoneNumber: String = ""
     
     var body: some View {
         
         VStack(alignment: .leading) {
+            
+            if !email.isEmpty {
+                
+                Text("Email")
+                    .foregroundColor(.gray)
+                    .font(.system(size: 20, weight: Font.Weight.regular))
+                    .padding(.bottom, -5)
+                    .padding(.top)
+                
+            }
+            
+            TextField("Phone Number", text: $email)
+                .frame(height:40)
+            
+            Rectangle()
+                .frame(height:1)
+                .foregroundColor(.gray)
+            
             
             if !phoneNumber.isEmpty {
                 
@@ -192,8 +183,8 @@ struct Phone_Number: View {
 }
 
 
-struct Create_Address_Previews: PreviewProvider {
+struct Profile_Screen_Previews: PreviewProvider {
     static var previews: some View {
-        Create_Address()
+        Profile_Screen()
     }
 }

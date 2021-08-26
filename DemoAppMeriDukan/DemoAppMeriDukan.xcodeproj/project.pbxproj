@@ -14,6 +14,9 @@
 		6A4E8FB526CBFA26005DA340 /* Login_Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4E8FB426CBFA26005DA340 /* Login_Screen.swift */; };
 		6A4E8FB926CBFA49005DA340 /* SignUp_Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4E8FB826CBFA49005DA340 /* SignUp_Screen.swift */; };
 		6A4E8FBD26CBFC6F005DA340 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4E8FBC26CBFC6F005DA340 /* Login.swift */; };
+		6A65257326D7B06F00AF9A63 /* Profile_Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A65257226D7B06F00AF9A63 /* Profile_Screen.swift */; };
+		6A65257826D7BE5B00AF9A63 /* Confirmation_Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A65257726D7BE5B00AF9A63 /* Confirmation_Screen.swift */; };
+		6A95BFF526D50CCD002116ED /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A95BFF426D50CCD002116ED /* SwiftUIView.swift */; };
 		AC4F0CDA26CA7F2100FA1357 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4F0CD926CA7F2100FA1357 /* Model.swift */; };
 		ACDA000F26C6826C0029C26B /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDA000E26C6826C0029C26B /* SearchVC.swift */; };
 		ACDA001226C683660029C26B /* HomeDataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDA001126C683660029C26B /* HomeDataVC.swift */; };
@@ -30,6 +33,9 @@
 		6A4E8FB426CBFA26005DA340 /* Login_Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login_Screen.swift; sourceTree = "<group>"; };
 		6A4E8FB826CBFA49005DA340 /* SignUp_Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp_Screen.swift; sourceTree = "<group>"; };
 		6A4E8FBC26CBFC6F005DA340 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		6A65257226D7B06F00AF9A63 /* Profile_Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile_Screen.swift; sourceTree = "<group>"; };
+		6A65257726D7BE5B00AF9A63 /* Confirmation_Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Confirmation_Screen.swift; sourceTree = "<group>"; };
+		6A95BFF426D50CCD002116ED /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		AC4F0CD926CA7F2100FA1357 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		ACDA000E26C6826C0029C26B /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
 		ACDA001126C683660029C26B /* HomeDataVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDataVC.swift; sourceTree = "<group>"; };
@@ -57,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				6A1F565826CFD6A000A235DD /* Create_Address.swift */,
+				6A95BFF426D50CCD002116ED /* SwiftUIView.swift */,
 			);
 			path = "Address UI";
 			sourceTree = "<group>";
@@ -94,6 +101,22 @@
 			path = "SignUp UI";
 			sourceTree = "<group>";
 		};
+		6A65257126D7B05400AF9A63 /* Profile UI */ = {
+			isa = PBXGroup;
+			children = (
+				6A65257226D7B06F00AF9A63 /* Profile_Screen.swift */,
+			);
+			path = "Profile UI";
+			sourceTree = "<group>";
+		};
+		6A65257526D7BE3B00AF9A63 /* Confirmation UI */ = {
+			isa = PBXGroup;
+			children = (
+				6A65257726D7BE5B00AF9A63 /* Confirmation_Screen.swift */,
+			);
+			path = "Confirmation UI";
+			sourceTree = "<group>";
+		};
 		ACDA000D26C682510029C26B /* HomeVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +146,8 @@
 		ACDAFFF326C649F30029C26B /* DemoAppMeriDukan */ = {
 			isa = PBXGroup;
 			children = (
+				6A65257526D7BE3B00AF9A63 /* Confirmation UI */,
+				6A65257126D7B05400AF9A63 /* Profile UI */,
 				6A1F565226CFB56100A235DD /* Address UI */,
 				6A3F5E2626CD1BC100EC685D /* Cart UI */,
 				6A4E8FB726CBFA3A005DA340 /* SignUp UI */,
@@ -223,12 +248,15 @@
 			files = (
 				6A4E8FB526CBFA26005DA340 /* Login_Screen.swift in Sources */,
 				AC4F0CDA26CA7F2100FA1357 /* Model.swift in Sources */,
+				6A65257326D7B06F00AF9A63 /* Profile_Screen.swift in Sources */,
+				6A95BFF526D50CCD002116ED /* SwiftUIView.swift in Sources */,
 				ACDA000F26C6826C0029C26B /* SearchVC.swift in Sources */,
 				6A4E8FB926CBFA49005DA340 /* SignUp_Screen.swift in Sources */,
 				6A4E8FB126CBF9F6005DA340 /* Welcome_Screen.swift in Sources */,
 				ACDA001226C683660029C26B /* HomeDataVC.swift in Sources */,
 				6A4E8FBD26CBFC6F005DA340 /* Login.swift in Sources */,
 				6A3F5E2826CD1BD800EC685D /* Cart_Screen.swift in Sources */,
+				6A65257826D7BE5B00AF9A63 /* Confirmation_Screen.swift in Sources */,
 				ACDAFFF726C649F30029C26B /* ContentView.swift in Sources */,
 				6A1F565926CFD6A000A235DD /* Create_Address.swift in Sources */,
 				ACDAFFF526C649F30029C26B /* DemoAppMeriDukanApp.swift in Sources */,

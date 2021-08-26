@@ -17,13 +17,22 @@ struct Cart_Screen: View {
             Cart_Cell()
                 
             .navigationTitle("Cart")
-            .navigationBarItems(trailing:
-                Button(action: {
-                    print("User icon pressed...")
-                }) {
-                    Image(systemName: "bell").imageScale(.large)
-                        .foregroundColor(.black)
-                })
+                .navigationBarItems(leading:
+                                        
+                                        
+                                        Image(systemName: "arrow.backward").imageScale(.large)
+                                        .foregroundColor(Color.black)
+                                    
+                                    , trailing:
+                                        
+                                        HStack {
+                                            Button(action: {
+                                                print("hk")
+                                            }, label: {
+                                                Image(systemName: "bell").imageScale(.large)
+                                                    .foregroundColor(Color.black)
+                                            })
+                                        })
         }
         
     }
