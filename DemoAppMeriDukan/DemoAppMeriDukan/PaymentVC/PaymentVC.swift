@@ -119,16 +119,16 @@ struct buttonCell: View {
         
         VStack {
             PushView(destination: CheckoutVC(), isActive: $isActive) {
-                Text("")
+                Button(action: {
+                    self.isActive.toggle()
+                }, label: {
+                    Text("Checkout")
+                        .bold()
+                        .font(.title3)
+                    
+                })
             }
-            Button(action: {
-                self.isActive.toggle()
-            }, label: {
-                Text("Checkout")
-                    .bold()
-                    .font(.title3)
-                
-            })
+          
             
         }
         .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, idealHeight: 55, maxHeight: .infinity)

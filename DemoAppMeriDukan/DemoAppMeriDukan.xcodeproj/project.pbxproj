@@ -12,6 +12,8 @@
 		AC701F9626CE792700D7CF24 /* ItemDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC701F9526CE792700D7CF24 /* ItemDetailVC.swift */; };
 		AC701F9D26CE799F00D7CF24 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC701F9C26CE799F00D7CF24 /* PageViewController.swift */; };
 		AC83BF9226D36D9900513A07 /* NavigationStack in Frameworks */ = {isa = PBXBuildFile; productRef = AC83BF9126D36D9900513A07 /* NavigationStack */; };
+		ACA3D9F026D7544900271CD0 /* FavoriteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA3D9EF26D7544900271CD0 /* FavoriteVC.swift */; };
+		ACA3DAA926D7CC7C00271CD0 /* MyOrderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA3DAA826D7CC7C00271CD0 /* MyOrderVC.swift */; };
 		ACD4FCE226D604F700075263 /* CheckoutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD4FCE126D604F700075263 /* CheckoutVC.swift */; };
 		ACD8101B26D4CFA300C5BE19 /* PaymentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD8101A26D4CFA300C5BE19 /* PaymentVC.swift */; };
 		ACDA000F26C6826C0029C26B /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDA000E26C6826C0029C26B /* SearchVC.swift */; };
@@ -27,6 +29,8 @@
 		AC4F0CD926CA7F2100FA1357 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		AC701F9526CE792700D7CF24 /* ItemDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailVC.swift; sourceTree = "<group>"; };
 		AC701F9C26CE799F00D7CF24 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		ACA3D9EF26D7544900271CD0 /* FavoriteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteVC.swift; sourceTree = "<group>"; };
+		ACA3DAA826D7CC7C00271CD0 /* MyOrderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyOrderVC.swift; sourceTree = "<group>"; };
 		ACD4FCE126D604F700075263 /* CheckoutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutVC.swift; sourceTree = "<group>"; };
 		ACD8101A26D4CFA300C5BE19 /* PaymentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentVC.swift; sourceTree = "<group>"; };
 		ACDA000E26C6826C0029C26B /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
@@ -66,6 +70,22 @@
 				AC701F9C26CE799F00D7CF24 /* PageViewController.swift */,
 			);
 			path = ItemDetailVC;
+			sourceTree = "<group>";
+		};
+		ACA3D9ED26D7541500271CD0 /* FavoriteVC */ = {
+			isa = PBXGroup;
+			children = (
+				ACA3D9EF26D7544900271CD0 /* FavoriteVC.swift */,
+			);
+			path = FavoriteVC;
+			sourceTree = "<group>";
+		};
+		ACA3DAA726D7CC6600271CD0 /* MyOrderVC */ = {
+			isa = PBXGroup;
+			children = (
+				ACA3DAA826D7CC7C00271CD0 /* MyOrderVC.swift */,
+			);
+			path = MyOrderVC;
 			sourceTree = "<group>";
 		};
 		ACD4FCE026D604DA00075263 /* CheckoutVC */ = {
@@ -113,6 +133,8 @@
 		ACDAFFF326C649F30029C26B /* DemoAppMeriDukan */ = {
 			isa = PBXGroup;
 			children = (
+				ACA3DAA726D7CC6600271CD0 /* MyOrderVC */,
+				ACA3D9ED26D7541500271CD0 /* FavoriteVC */,
 				ACD4FCE026D604DA00075263 /* CheckoutVC */,
 				ACD8101926D4CF8A00C5BE19 /* PaymentVC */,
 				AC701F9426CE78F000D7CF24 /* ItemDetailVC */,
@@ -212,12 +234,14 @@
 			files = (
 				AC42C2A826CD19EA0042095E /* FeaturedVC.swift in Sources */,
 				AC4F0CDA26CA7F2100FA1357 /* Model.swift in Sources */,
+				ACA3D9F026D7544900271CD0 /* FavoriteVC.swift in Sources */,
 				ACDA000F26C6826C0029C26B /* SearchVC.swift in Sources */,
 				AC701F9626CE792700D7CF24 /* ItemDetailVC.swift in Sources */,
 				ACD8101B26D4CFA300C5BE19 /* PaymentVC.swift in Sources */,
 				ACDA001226C683660029C26B /* HomeDataVC.swift in Sources */,
 				ACD4FCE226D604F700075263 /* CheckoutVC.swift in Sources */,
 				ACDAFFF726C649F30029C26B /* ContentView.swift in Sources */,
+				ACA3DAA926D7CC7C00271CD0 /* MyOrderVC.swift in Sources */,
 				ACDAFFF526C649F30029C26B /* DemoAppMeriDukanApp.swift in Sources */,
 				AC701F9D26CE799F00D7CF24 /* PageViewController.swift in Sources */,
 			);
