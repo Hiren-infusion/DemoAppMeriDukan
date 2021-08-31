@@ -3,14 +3,28 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+<<<<<<< HEAD
 		6A4E8FA926CBE7D5005DA340 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4E8FA826CBE7D4005DA340 /* Login.swift */; };
 		6A95175026C6534700D9E155 /* Welcome_Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A95174F26C6534700D9E155 /* Welcome_Screen.swift */; };
 		6A95175326C67BCD00D9E155 /* Login_Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A95175226C67BCD00D9E155 /* Login_Screen.swift */; };
 		6A95175626C67E8B00D9E155 /* SignUp_Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A95175526C67E8B00D9E155 /* SignUp_Screen.swift */; };
+=======
+		AC42C2A826CD19EA0042095E /* FeaturedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC42C2A726CD19EA0042095E /* FeaturedVC.swift */; };
+		AC4F0CDA26CA7F2100FA1357 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4F0CD926CA7F2100FA1357 /* Model.swift */; };
+		AC701F9626CE792700D7CF24 /* ItemDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC701F9526CE792700D7CF24 /* ItemDetailVC.swift */; };
+		AC701F9D26CE799F00D7CF24 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC701F9C26CE799F00D7CF24 /* PageViewController.swift */; };
+		AC83BF9226D36D9900513A07 /* NavigationStack in Frameworks */ = {isa = PBXBuildFile; productRef = AC83BF9126D36D9900513A07 /* NavigationStack */; };
+		ACA3D9F026D7544900271CD0 /* FavoriteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA3D9EF26D7544900271CD0 /* FavoriteVC.swift */; };
+		ACA3DAA926D7CC7C00271CD0 /* MyOrderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA3DAA826D7CC7C00271CD0 /* MyOrderVC.swift */; };
+		ACD4FCE226D604F700075263 /* CheckoutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD4FCE126D604F700075263 /* CheckoutVC.swift */; };
+		ACD8101B26D4CFA300C5BE19 /* PaymentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD8101A26D4CFA300C5BE19 /* PaymentVC.swift */; };
+		ACDA000F26C6826C0029C26B /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDA000E26C6826C0029C26B /* SearchVC.swift */; };
+		ACDA001226C683660029C26B /* HomeDataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDA001126C683660029C26B /* HomeDataVC.swift */; };
+>>>>>>> 3a496f7f48d1fe46ece8d306959dc84178293a75
 		ACDAFFF526C649F30029C26B /* DemoAppMeriDukanApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDAFFF426C649F30029C26B /* DemoAppMeriDukanApp.swift */; };
 		ACDAFFF726C649F30029C26B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDAFFF626C649F30029C26B /* ContentView.swift */; };
 		ACDAFFF926C649F80029C26B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACDAFFF826C649F80029C26B /* Assets.xcassets */; };
@@ -18,10 +32,23 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+<<<<<<< HEAD
 		6A4E8FA826CBE7D4005DA340 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		6A95174F26C6534700D9E155 /* Welcome_Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Welcome_Screen.swift; sourceTree = "<group>"; };
 		6A95175226C67BCD00D9E155 /* Login_Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login_Screen.swift; sourceTree = "<group>"; };
 		6A95175526C67E8B00D9E155 /* SignUp_Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp_Screen.swift; sourceTree = "<group>"; };
+=======
+		AC42C2A726CD19EA0042095E /* FeaturedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedVC.swift; sourceTree = "<group>"; };
+		AC4F0CD926CA7F2100FA1357 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		AC701F9526CE792700D7CF24 /* ItemDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailVC.swift; sourceTree = "<group>"; };
+		AC701F9C26CE799F00D7CF24 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		ACA3D9EF26D7544900271CD0 /* FavoriteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteVC.swift; sourceTree = "<group>"; };
+		ACA3DAA826D7CC7C00271CD0 /* MyOrderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyOrderVC.swift; sourceTree = "<group>"; };
+		ACD4FCE126D604F700075263 /* CheckoutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutVC.swift; sourceTree = "<group>"; };
+		ACD8101A26D4CFA300C5BE19 /* PaymentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentVC.swift; sourceTree = "<group>"; };
+		ACDA000E26C6826C0029C26B /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
+		ACDA001126C683660029C26B /* HomeDataVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDataVC.swift; sourceTree = "<group>"; };
+>>>>>>> 3a496f7f48d1fe46ece8d306959dc84178293a75
 		ACDAFFF126C649F30029C26B /* DemoAppMeriDukan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoAppMeriDukan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACDAFFF426C649F30029C26B /* DemoAppMeriDukanApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoAppMeriDukanApp.swift; sourceTree = "<group>"; };
 		ACDAFFF626C649F30029C26B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -35,12 +62,72 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC83BF9226D36D9900513A07 /* NavigationStack in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC42C2A526CD19CB0042095E /* FeaturedVC */ = {
+			isa = PBXGroup;
+			children = (
+				AC42C2A726CD19EA0042095E /* FeaturedVC.swift */,
+			);
+			path = FeaturedVC;
+			sourceTree = "<group>";
+		};
+		AC701F9426CE78F000D7CF24 /* ItemDetailVC */ = {
+			isa = PBXGroup;
+			children = (
+				AC701F9526CE792700D7CF24 /* ItemDetailVC.swift */,
+				AC701F9C26CE799F00D7CF24 /* PageViewController.swift */,
+			);
+			path = ItemDetailVC;
+			sourceTree = "<group>";
+		};
+		ACA3D9ED26D7541500271CD0 /* FavoriteVC */ = {
+			isa = PBXGroup;
+			children = (
+				ACA3D9EF26D7544900271CD0 /* FavoriteVC.swift */,
+			);
+			path = FavoriteVC;
+			sourceTree = "<group>";
+		};
+		ACA3DAA726D7CC6600271CD0 /* MyOrderVC */ = {
+			isa = PBXGroup;
+			children = (
+				ACA3DAA826D7CC7C00271CD0 /* MyOrderVC.swift */,
+			);
+			path = MyOrderVC;
+			sourceTree = "<group>";
+		};
+		ACD4FCE026D604DA00075263 /* CheckoutVC */ = {
+			isa = PBXGroup;
+			children = (
+				ACD4FCE126D604F700075263 /* CheckoutVC.swift */,
+			);
+			path = CheckoutVC;
+			sourceTree = "<group>";
+		};
+		ACD8101926D4CF8A00C5BE19 /* PaymentVC */ = {
+			isa = PBXGroup;
+			children = (
+				ACD8101A26D4CFA300C5BE19 /* PaymentVC.swift */,
+			);
+			path = PaymentVC;
+			sourceTree = "<group>";
+		};
+		ACDA000D26C682510029C26B /* HomeVC */ = {
+			isa = PBXGroup;
+			children = (
+				ACDA000E26C6826C0029C26B /* SearchVC.swift */,
+				ACDA001126C683660029C26B /* HomeDataVC.swift */,
+				AC4F0CD926CA7F2100FA1357 /* Model.swift */,
+			);
+			path = HomeVC;
+			sourceTree = "<group>";
+		};
 		ACDAFFE826C649F30029C26B = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +147,13 @@
 		ACDAFFF326C649F30029C26B /* DemoAppMeriDukan */ = {
 			isa = PBXGroup;
 			children = (
+				ACA3DAA726D7CC6600271CD0 /* MyOrderVC */,
+				ACA3D9ED26D7541500271CD0 /* FavoriteVC */,
+				ACD4FCE026D604DA00075263 /* CheckoutVC */,
+				ACD8101926D4CF8A00C5BE19 /* PaymentVC */,
+				AC701F9426CE78F000D7CF24 /* ItemDetailVC */,
+				AC42C2A526CD19CB0042095E /* FeaturedVC */,
+				ACDA000D26C682510029C26B /* HomeVC */,
 				ACDAFFF426C649F30029C26B /* DemoAppMeriDukanApp.swift */,
 				ACDAFFF626C649F30029C26B /* ContentView.swift */,
 				6A95174F26C6534700D9E155 /* Welcome_Screen.swift */,
@@ -97,6 +191,9 @@
 			dependencies = (
 			);
 			name = DemoAppMeriDukan;
+			packageProductDependencies = (
+				AC83BF9126D36D9900513A07 /* NavigationStack */,
+			);
 			productName = DemoAppMeriDukan;
 			productReference = ACDAFFF126C649F30029C26B /* DemoAppMeriDukan.app */;
 			productType = "com.apple.product-type.application";
@@ -124,6 +221,9 @@
 				Base,
 			);
 			mainGroup = ACDAFFE826C649F30029C26B;
+			packageReferences = (
+				AC83BF9026D36D9900513A07 /* XCRemoteSwiftPackageReference "swiftui-navigation-stack" */,
+			);
 			productRefGroup = ACDAFFF226C649F30029C26B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -150,12 +250,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC42C2A826CD19EA0042095E /* FeaturedVC.swift in Sources */,
+				AC4F0CDA26CA7F2100FA1357 /* Model.swift in Sources */,
+				ACA3D9F026D7544900271CD0 /* FavoriteVC.swift in Sources */,
+				ACDA000F26C6826C0029C26B /* SearchVC.swift in Sources */,
+				AC701F9626CE792700D7CF24 /* ItemDetailVC.swift in Sources */,
+				ACD8101B26D4CFA300C5BE19 /* PaymentVC.swift in Sources */,
+				ACDA001226C683660029C26B /* HomeDataVC.swift in Sources */,
+				ACD4FCE226D604F700075263 /* CheckoutVC.swift in Sources */,
 				ACDAFFF726C649F30029C26B /* ContentView.swift in Sources */,
+<<<<<<< HEAD
 				6A95175326C67BCD00D9E155 /* Login_Screen.swift in Sources */,
 				6A95175626C67E8B00D9E155 /* SignUp_Screen.swift in Sources */,
 				6A4E8FA926CBE7D5005DA340 /* Login.swift in Sources */,
 				ACDAFFF526C649F30029C26B /* DemoAppMeriDukanApp.swift in Sources */,
 				6A95175026C6534700D9E155 /* Welcome_Screen.swift in Sources */,
+=======
+				ACA3DAA926D7CC7C00271CD0 /* MyOrderVC.swift in Sources */,
+				ACDAFFF526C649F30029C26B /* DemoAppMeriDukanApp.swift in Sources */,
+				AC701F9D26CE799F00D7CF24 /* PageViewController.swift in Sources */,
+>>>>>>> 3a496f7f48d1fe46ece8d306959dc84178293a75
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +458,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AC83BF9026D36D9900513A07 /* XCRemoteSwiftPackageReference "swiftui-navigation-stack" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/matteopuc/swiftui-navigation-stack.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AC83BF9126D36D9900513A07 /* NavigationStack */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AC83BF9026D36D9900513A07 /* XCRemoteSwiftPackageReference "swiftui-navigation-stack" */;
+			productName = NavigationStack;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = ACDAFFE926C649F30029C26B /* Project object */;
 }

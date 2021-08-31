@@ -1,6 +1,7 @@
 {
   "images" : [
     {
+<<<<<<< HEAD
       "filename" : "Screenshot 2021-08-13 at 1.07.42 PM.png",
       "idiom" : "universal",
       "scale" : "1x"
@@ -12,6 +13,10 @@
     {
       "idiom" : "universal",
       "scale" : "3x"
+=======
+      "filename" : "wom.jpeg",
+      "idiom" : "universal"
+>>>>>>> 3a496f7f48d1fe46ece8d306959dc84178293a75
     }
   ],
   "info" : {
