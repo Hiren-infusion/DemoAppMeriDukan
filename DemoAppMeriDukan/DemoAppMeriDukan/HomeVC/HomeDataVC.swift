@@ -6,17 +6,21 @@
 //
 
 import SwiftUI
+import NavigationStack
 
 struct HomeDataVC: View {
     
     var categ: [Categories] = CategoriesList.topTen
     var featureData: [Featured] = FeaturedList.topTen
     @State var searchText = ""
+    @State var selection: Int? = nil
+    @State private var isActive = false
+    @State private var isActive1 = false
     
     var body: some View {
+        NavigationStackView{
         NavigationView {
-            VStack(alignment: .leading) {
-                
+            VStack {
                 ZStack {
                     RoundedRectangle(cornerRadius: 10.0)
                         .foregroundColor(Color.white)
@@ -33,7 +37,6 @@ struct HomeDataVC: View {
                 .cornerRadius(20)
                 .padding()
                 
-                ZStack {
                     List  {
                         HStack {
                             Text("Categories")
@@ -60,9 +63,16 @@ struct HomeDataVC: View {
                             Text("Featured")
                                 .font(.title)
                             Spacer()
-                            Button("See all") {
-                                print("all")
-                            }.foregroundColor(.gray)
+                            
+                            PushView(destination: FeaturedVC(), isActive: $isActive) {
+                                            Text("")
+                                        }
+                            Button(action: {
+                                            self.isActive.toggle()
+                                        }, label: {
+                                            Text("See all")
+                                                .foregroundColor(.gray)
+                                        }).buttonStyle(PlainButtonStyle())
                         }.frame(height: 10)
                         
                         ScrollView(.horizontal, showsIndicators: false, content: {
@@ -82,9 +92,15 @@ struct HomeDataVC: View {
                             Text("Best Sell")
                                 .font(.title)
                             Spacer()
-                            Button("See all") {
-                                print("all")
-                            }.foregroundColor(.gray)
+                            PushView(destination: ItemDetailVC(), isActive: $isActive1) {
+                                            Text("")
+                                        }
+                            Button(action: {
+                                            self.isActive1.toggle()
+                                        }, label: {
+                                            Text("See all")
+                                                .foregroundColor(.gray)
+                                        }).buttonStyle(PlainButtonStyle())
                         }.frame(height: 10)
                         
                         ScrollView(.horizontal, showsIndicators: false, content: {
@@ -99,70 +115,64 @@ struct HomeDataVC: View {
                         .frame(height: 240)
                         
                     }
-                   // .navigationBarTitle(Text("Home"))
-                    .navigationBarItems(leading:
-                                            Button(action: {
-                                                print("Menu")
-                                            }, label: {
-                                                Image(systemName: "text.alignleft").imageScale(.large)
-                                                    .foregroundColor(.black)
-                                            }),
-                                        trailing:
-                                            
-                                            HStack {
-                                                Button(action: {
-                                                    print("Notification")
-                                                }, label: {
-                                                    Image(systemName: "bell").imageScale(.large)
-                                                        .foregroundColor(.black)
-                                                })
-                                                
-                                                Button(action: {
-                                                    print("Filter")
-                                                }, label: {
-                                                    Image(systemName: "person.crop.circle").imageScale(.large)
-                                                        .foregroundColor(.black)
-                                                })
-                                            }
-                    )
-                }
-                Spacer()
+                    .listStyle(PlainListStyle())
+            
+                    .toolbar {
+                        ToolbarItemGroup(placement: .navigationBarLeading) {
+                            Button(action: {
+                                print("Menu")
+                            }, label: {
+                                Image(systemName: "text.alignleft").imageScale(.large)
+                                   
+                            })
+                        }
+                        ToolbarItemGroup (placement: .navigationBarTrailing) {
+                            
+                            Button(action: {
+                                print("Notification")
+                            }, label: {
+                                Image(systemName: "bell").imageScale(.large)
+                                    
+                            })
+                            
+                            Button(action: {
+                                print("Filter")
+                            }, label: {
+                                Image(systemName: "filter").imageScale(.large)
+                                    .frame(width: 25, height: 25)
+                                    .foregroundColor(.black)
+                                    .background(Color.blue)
+                            })
+                        }
+                    }
             }
-            
-            
+        }.accentColor(.black)
         }
-        
+    }
+    
+}
+struct Root: View {
+    var body: some View {
+        NavigationStackView {
+            HomeDataVC()
+        }
     }
 }
 struct CategoriesView: View {
     var cate : Categories
     var body: some View {
-        
-        VStack {
+        ZStack {
             Image(cate.image)
                 .resizable()
                 .cornerRadius(10)
-                .overlay(labelOverlay(cate: cate), alignment: .center)
-            Spacer()
-            Divider()
-            
-        }.frame(width: 150, height: 70)
-    }
-}
-
-
-struct labelOverlay: View {
-    var cate : Categories
-    var body: some View {
-        ZStack{
+            RoundedRectangle(cornerRadius: 10.0)
+                .fill(Color.red)
+                .opacity(0.7)
             Text(cate.title)
                 .font(.title3)
                 .fontWeight(.bold)
                 .foregroundColor(.white)
-        }.background(Color.red)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .opacity(0.7)
-        .padding(10)
+        }.frame(width: 120, height: 70)
     }
 }
 
