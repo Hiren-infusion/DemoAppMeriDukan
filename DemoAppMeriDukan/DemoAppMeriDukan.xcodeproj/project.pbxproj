@@ -8,19 +8,6 @@
 
 /* Begin PBXBuildFile section */
 <<<<<<< HEAD
-		6A1F565926CFD6A000A235DD /* Create_Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1F565826CFD6A000A235DD /* Create_Address.swift */; };
-		6A3F5E2426CD14A500EC685D /* NavigationStack in Frameworks */ = {isa = PBXBuildFile; productRef = 6A3F5E2326CD14A500EC685D /* NavigationStack */; };
-		6A3F5E2826CD1BD800EC685D /* Cart_Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3F5E2726CD1BD800EC685D /* Cart_Screen.swift */; };
-		6A4E8FB126CBF9F6005DA340 /* Welcome_Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4E8FB026CBF9F6005DA340 /* Welcome_Screen.swift */; };
-		6A4E8FB526CBFA26005DA340 /* Login_Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4E8FB426CBFA26005DA340 /* Login_Screen.swift */; };
-		6A4E8FB926CBFA49005DA340 /* SignUp_Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4E8FB826CBFA49005DA340 /* SignUp_Screen.swift */; };
-		6A4E8FBD26CBFC6F005DA340 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4E8FBC26CBFC6F005DA340 /* Login.swift */; };
-		6A5D6ABE26D91E35008F07B5 /* Menu_Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5D6ABD26D91E35008F07B5 /* Menu_Screen.swift */; };
-		6A65257326D7B06F00AF9A63 /* Profile_Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A65257226D7B06F00AF9A63 /* Profile_Screen.swift */; };
-		6A65257826D7BE5B00AF9A63 /* Confirmation_Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A65257726D7BE5B00AF9A63 /* Confirmation_Screen.swift */; };
-		6A95BFF526D50CCD002116ED /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A95BFF426D50CCD002116ED /* SwiftUIView.swift */; };
-=======
-<<<<<<< HEAD
 		6A4E8FA926CBE7D5005DA340 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4E8FA826CBE7D4005DA340 /* Login.swift */; };
 		6A95175026C6534700D9E155 /* Welcome_Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A95174F26C6534700D9E155 /* Welcome_Screen.swift */; };
 		6A95175326C67BCD00D9E155 /* Login_Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A95175226C67BCD00D9E155 /* Login_Screen.swift */; };
