@@ -8,12 +8,26 @@
 
 /* Begin PBXBuildFile section */
 <<<<<<< HEAD
+		6A1F565926CFD6A000A235DD /* Create_Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1F565826CFD6A000A235DD /* Create_Address.swift */; };
+		6A3F5E2426CD14A500EC685D /* NavigationStack in Frameworks */ = {isa = PBXBuildFile; productRef = 6A3F5E2326CD14A500EC685D /* NavigationStack */; };
+		6A3F5E2826CD1BD800EC685D /* Cart_Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3F5E2726CD1BD800EC685D /* Cart_Screen.swift */; };
+		6A4E8FB126CBF9F6005DA340 /* Welcome_Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4E8FB026CBF9F6005DA340 /* Welcome_Screen.swift */; };
+		6A4E8FB526CBFA26005DA340 /* Login_Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4E8FB426CBFA26005DA340 /* Login_Screen.swift */; };
+		6A4E8FB926CBFA49005DA340 /* SignUp_Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4E8FB826CBFA49005DA340 /* SignUp_Screen.swift */; };
+		6A4E8FBD26CBFC6F005DA340 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4E8FBC26CBFC6F005DA340 /* Login.swift */; };
+		6A5D6ABE26D91E35008F07B5 /* Menu_Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5D6ABD26D91E35008F07B5 /* Menu_Screen.swift */; };
+		6A65257326D7B06F00AF9A63 /* Profile_Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A65257226D7B06F00AF9A63 /* Profile_Screen.swift */; };
+		6A65257826D7BE5B00AF9A63 /* Confirmation_Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A65257726D7BE5B00AF9A63 /* Confirmation_Screen.swift */; };
+		6A95BFF526D50CCD002116ED /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A95BFF426D50CCD002116ED /* SwiftUIView.swift */; };
+=======
+<<<<<<< HEAD
 		6A4E8FA926CBE7D5005DA340 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4E8FA826CBE7D4005DA340 /* Login.swift */; };
 		6A95175026C6534700D9E155 /* Welcome_Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A95174F26C6534700D9E155 /* Welcome_Screen.swift */; };
 		6A95175326C67BCD00D9E155 /* Login_Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A95175226C67BCD00D9E155 /* Login_Screen.swift */; };
 		6A95175626C67E8B00D9E155 /* SignUp_Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A95175526C67E8B00D9E155 /* SignUp_Screen.swift */; };
 =======
 		AC42C2A826CD19EA0042095E /* FeaturedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC42C2A726CD19EA0042095E /* FeaturedVC.swift */; };
+>>>>>>> 974a05f2f8e1d479c19f4de1de47539974af8437
 		AC4F0CDA26CA7F2100FA1357 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4F0CD926CA7F2100FA1357 /* Model.swift */; };
 		AC701F9626CE792700D7CF24 /* ItemDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC701F9526CE792700D7CF24 /* ItemDetailVC.swift */; };
 		AC701F9D26CE799F00D7CF24 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC701F9C26CE799F00D7CF24 /* PageViewController.swift */; };
@@ -33,12 +47,25 @@
 
 /* Begin PBXFileReference section */
 <<<<<<< HEAD
+		6A1F565826CFD6A000A235DD /* Create_Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Create_Address.swift; sourceTree = "<group>"; };
+		6A3F5E2726CD1BD800EC685D /* Cart_Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cart_Screen.swift; sourceTree = "<group>"; };
+		6A4E8FB026CBF9F6005DA340 /* Welcome_Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Welcome_Screen.swift; sourceTree = "<group>"; };
+		6A4E8FB426CBFA26005DA340 /* Login_Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login_Screen.swift; sourceTree = "<group>"; };
+		6A4E8FB826CBFA49005DA340 /* SignUp_Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp_Screen.swift; sourceTree = "<group>"; };
+		6A4E8FBC26CBFC6F005DA340 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		6A5D6ABD26D91E35008F07B5 /* Menu_Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu_Screen.swift; sourceTree = "<group>"; };
+		6A65257226D7B06F00AF9A63 /* Profile_Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile_Screen.swift; sourceTree = "<group>"; };
+		6A65257726D7BE5B00AF9A63 /* Confirmation_Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Confirmation_Screen.swift; sourceTree = "<group>"; };
+		6A95BFF426D50CCD002116ED /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+=======
+<<<<<<< HEAD
 		6A4E8FA826CBE7D4005DA340 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		6A95174F26C6534700D9E155 /* Welcome_Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Welcome_Screen.swift; sourceTree = "<group>"; };
 		6A95175226C67BCD00D9E155 /* Login_Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login_Screen.swift; sourceTree = "<group>"; };
 		6A95175526C67E8B00D9E155 /* SignUp_Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp_Screen.swift; sourceTree = "<group>"; };
 =======
 		AC42C2A726CD19EA0042095E /* FeaturedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedVC.swift; sourceTree = "<group>"; };
+>>>>>>> 974a05f2f8e1d479c19f4de1de47539974af8437
 		AC4F0CD926CA7F2100FA1357 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		AC701F9526CE792700D7CF24 /* ItemDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailVC.swift; sourceTree = "<group>"; };
 		AC701F9C26CE799F00D7CF24 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
@@ -62,13 +89,83 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< HEAD
+				6A3F5E2426CD14A500EC685D /* NavigationStack in Frameworks */,
+=======
 				AC83BF9226D36D9900513A07 /* NavigationStack in Frameworks */,
+>>>>>>> 974a05f2f8e1d479c19f4de1de47539974af8437
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+<<<<<<< HEAD
+		6A1F565226CFB56100A235DD /* Address UI */ = {
+			isa = PBXGroup;
+			children = (
+				6A1F565826CFD6A000A235DD /* Create_Address.swift */,
+				6A95BFF426D50CCD002116ED /* SwiftUIView.swift */,
+			);
+			path = "Address UI";
+			sourceTree = "<group>";
+		};
+		6A3F5E2626CD1BC100EC685D /* Cart UI */ = {
+			isa = PBXGroup;
+			children = (
+				6A3F5E2726CD1BD800EC685D /* Cart_Screen.swift */,
+			);
+			path = "Cart UI";
+			sourceTree = "<group>";
+		};
+		6A4E8FAF26CBF9D1005DA340 /* Welcome UI */ = {
+			isa = PBXGroup;
+			children = (
+				6A4E8FB026CBF9F6005DA340 /* Welcome_Screen.swift */,
+			);
+			path = "Welcome UI";
+			sourceTree = "<group>";
+		};
+		6A4E8FB326CBFA15005DA340 /* Login UI */ = {
+			isa = PBXGroup;
+			children = (
+				6A4E8FB426CBFA26005DA340 /* Login_Screen.swift */,
+				6A4E8FBC26CBFC6F005DA340 /* Login.swift */,
+			);
+			path = "Login UI";
+			sourceTree = "<group>";
+		};
+		6A4E8FB726CBFA3A005DA340 /* SignUp UI */ = {
+			isa = PBXGroup;
+			children = (
+				6A4E8FB826CBFA49005DA340 /* SignUp_Screen.swift */,
+			);
+			path = "SignUp UI";
+			sourceTree = "<group>";
+		};
+		6A5D6ABC26D91E26008F07B5 /* Menu UI */ = {
+			isa = PBXGroup;
+			children = (
+				6A5D6ABD26D91E35008F07B5 /* Menu_Screen.swift */,
+			);
+			path = "Menu UI";
+			sourceTree = "<group>";
+		};
+		6A65257126D7B05400AF9A63 /* Profile UI */ = {
+			isa = PBXGroup;
+			children = (
+				6A65257226D7B06F00AF9A63 /* Profile_Screen.swift */,
+			);
+			path = "Profile UI";
+			sourceTree = "<group>";
+		};
+		6A65257526D7BE3B00AF9A63 /* Confirmation UI */ = {
+			isa = PBXGroup;
+			children = (
+				6A65257726D7BE5B00AF9A63 /* Confirmation_Screen.swift */,
+			);
+			path = "Confirmation UI";
+=======
 		AC42C2A526CD19CB0042095E /* FeaturedVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +213,7 @@
 				ACD8101A26D4CFA300C5BE19 /* PaymentVC.swift */,
 			);
 			path = PaymentVC;
+>>>>>>> 974a05f2f8e1d479c19f4de1de47539974af8437
 			sourceTree = "<group>";
 		};
 		ACDA000D26C682510029C26B /* HomeVC */ = {
@@ -147,12 +245,23 @@
 		ACDAFFF326C649F30029C26B /* DemoAppMeriDukan */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
+				6A5D6ABC26D91E26008F07B5 /* Menu UI */,
+				6A65257526D7BE3B00AF9A63 /* Confirmation UI */,
+				6A65257126D7B05400AF9A63 /* Profile UI */,
+				6A1F565226CFB56100A235DD /* Address UI */,
+				6A3F5E2626CD1BC100EC685D /* Cart UI */,
+				6A4E8FB726CBFA3A005DA340 /* SignUp UI */,
+				6A4E8FB326CBFA15005DA340 /* Login UI */,
+				6A4E8FAF26CBF9D1005DA340 /* Welcome UI */,
+=======
 				ACA3DAA726D7CC6600271CD0 /* MyOrderVC */,
 				ACA3D9ED26D7541500271CD0 /* FavoriteVC */,
 				ACD4FCE026D604DA00075263 /* CheckoutVC */,
 				ACD8101926D4CF8A00C5BE19 /* PaymentVC */,
 				AC701F9426CE78F000D7CF24 /* ItemDetailVC */,
 				AC42C2A526CD19CB0042095E /* FeaturedVC */,
+>>>>>>> 974a05f2f8e1d479c19f4de1de47539974af8437
 				ACDA000D26C682510029C26B /* HomeVC */,
 				ACDAFFF426C649F30029C26B /* DemoAppMeriDukanApp.swift */,
 				ACDAFFF626C649F30029C26B /* ContentView.swift */,
@@ -192,7 +301,11 @@
 			);
 			name = DemoAppMeriDukan;
 			packageProductDependencies = (
+<<<<<<< HEAD
+				6A3F5E2326CD14A500EC685D /* NavigationStack */,
+=======
 				AC83BF9126D36D9900513A07 /* NavigationStack */,
+>>>>>>> 974a05f2f8e1d479c19f4de1de47539974af8437
 			);
 			productName = DemoAppMeriDukan;
 			productReference = ACDAFFF126C649F30029C26B /* DemoAppMeriDukan.app */;
@@ -222,7 +335,11 @@
 			);
 			mainGroup = ACDAFFE826C649F30029C26B;
 			packageReferences = (
+<<<<<<< HEAD
+				6A3F5E2226CD14A500EC685D /* XCRemoteSwiftPackageReference "swiftui-navigation-stack" */,
+=======
 				AC83BF9026D36D9900513A07 /* XCRemoteSwiftPackageReference "swiftui-navigation-stack" */,
+>>>>>>> 974a05f2f8e1d479c19f4de1de47539974af8437
 			);
 			productRefGroup = ACDAFFF226C649F30029C26B /* Products */;
 			projectDirPath = "";
@@ -250,6 +367,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< HEAD
+				6A4E8FB526CBFA26005DA340 /* Login_Screen.swift in Sources */,
+				AC4F0CDA26CA7F2100FA1357 /* Model.swift in Sources */,
+				6A65257326D7B06F00AF9A63 /* Profile_Screen.swift in Sources */,
+				6A95BFF526D50CCD002116ED /* SwiftUIView.swift in Sources */,
+				ACDA000F26C6826C0029C26B /* SearchVC.swift in Sources */,
+				6A4E8FB926CBFA49005DA340 /* SignUp_Screen.swift in Sources */,
+				6A4E8FB126CBF9F6005DA340 /* Welcome_Screen.swift in Sources */,
+				ACDA001226C683660029C26B /* HomeDataVC.swift in Sources */,
+				6A4E8FBD26CBFC6F005DA340 /* Login.swift in Sources */,
+				6A3F5E2826CD1BD800EC685D /* Cart_Screen.swift in Sources */,
+				6A65257826D7BE5B00AF9A63 /* Confirmation_Screen.swift in Sources */,
+				ACDAFFF726C649F30029C26B /* ContentView.swift in Sources */,
+				6A5D6ABE26D91E35008F07B5 /* Menu_Screen.swift in Sources */,
+				6A1F565926CFD6A000A235DD /* Create_Address.swift in Sources */,
+=======
 				AC42C2A826CD19EA0042095E /* FeaturedVC.swift in Sources */,
 				AC4F0CDA26CA7F2100FA1357 /* Model.swift in Sources */,
 				ACA3D9F026D7544900271CD0 /* FavoriteVC.swift in Sources */,
@@ -263,6 +396,7 @@
 				6A95175326C67BCD00D9E155 /* Login_Screen.swift in Sources */,
 				6A95175626C67E8B00D9E155 /* SignUp_Screen.swift in Sources */,
 				6A4E8FA926CBE7D5005DA340 /* Login.swift in Sources */,
+>>>>>>> 974a05f2f8e1d479c19f4de1de47539974af8437
 				ACDAFFF526C649F30029C26B /* DemoAppMeriDukanApp.swift in Sources */,
 				6A95175026C6534700D9E155 /* Welcome_Screen.swift in Sources */,
 =======
@@ -460,7 +594,11 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+<<<<<<< HEAD
+		6A3F5E2226CD14A500EC685D /* XCRemoteSwiftPackageReference "swiftui-navigation-stack" */ = {
+=======
 		AC83BF9026D36D9900513A07 /* XCRemoteSwiftPackageReference "swiftui-navigation-stack" */ = {
+>>>>>>> 974a05f2f8e1d479c19f4de1de47539974af8437
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/matteopuc/swiftui-navigation-stack.git";
 			requirement = {
@@ -471,9 +609,15 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+<<<<<<< HEAD
+		6A3F5E2326CD14A500EC685D /* NavigationStack */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6A3F5E2226CD14A500EC685D /* XCRemoteSwiftPackageReference "swiftui-navigation-stack" */;
+=======
 		AC83BF9126D36D9900513A07 /* NavigationStack */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = AC83BF9026D36D9900513A07 /* XCRemoteSwiftPackageReference "swiftui-navigation-stack" */;
+>>>>>>> 974a05f2f8e1d479c19f4de1de47539974af8437
 			productName = NavigationStack;
 		};
 /* End XCSwiftPackageProductDependency section */
